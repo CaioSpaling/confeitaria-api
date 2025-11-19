@@ -1,8 +1,7 @@
 import os
 
 from flask import Flask
-from cardapio import buscar_cardapio
-from cardapio import buscar_por_id
+from cardapio import buscar_cardapio, buscar_por_id
 
 app = Flask(__name__)
 
