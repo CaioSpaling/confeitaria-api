@@ -15,5 +15,9 @@ def hello_world():
 def cardapio():
   return buscar_cardapio()
 
+@app.route("/cardapio/<int:item_id>")
+def cardapio_por_id(item_id):
+  return buscar_por_id(item_id)
+
 if __name__ == "__main__":
   app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 3000)))
